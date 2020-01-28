@@ -61,7 +61,9 @@ const SignupForm: React.SFC<Props> = ({
             name="email"
             component={Input}
             placeholder="Email"
-            prefix={<Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />}
+            prefix={
+              <Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+            }
           />
           {firstName && (
             <Field
