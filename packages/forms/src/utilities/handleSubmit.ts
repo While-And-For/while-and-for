@@ -1,27 +1,23 @@
-type SubmitArgs = {
-  variables: any;
-};
+type SubmitArgs = any;
 
 type Args = {
   submit: (a: SubmitArgs) => void;
-  cb?: () => void;
   onError?: (e: Error) => void;
+  onSuccess?: (r: any) => void;
 };
 
 type Form = {
   setSubmitting: (a: boolean) => void;
 };
 
-const handleSubmit = ({ submit, cb, onError }: Args) => async (
+const handleSubmit = ({ submit, onError, onSuccess }: Args) => async (
   values: any,
   form: Form
 ): Promise<void> => {
   try {
-    await submit({
-      variables: values
-    });
+    const result = await submit(values);
 
-    if (cb && typeof cb === 'function') cb();
+    onSuccess && typeof onSuccess === 'function' && onSuccess(result);
   } catch (err) {
     onError && typeof onError === 'function' && onError(err);
   } finally {

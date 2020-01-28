@@ -28,7 +28,7 @@
     "url": "git+https://github.com/While-And-For/while-and-for.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "./node_modules/.bin/webpack"
   },
   "bugs": {
     "url": "https://github.com/While-And-For/while-and-for/issues"
