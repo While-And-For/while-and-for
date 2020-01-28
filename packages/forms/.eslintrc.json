@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "../../.eslintrc.json",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "react/prop-types": 0
+  },
+  "globals": {},
+  "settings": {
+    "import/resolver" : {
+      "alias" : {
+        "map" : [
+          ["components", "./src/components"],
+          ["forms", "./src/forms"],
+          ["utilities", "./src/utilities"]
+        ]
+      }
+    }
+  }
+}
