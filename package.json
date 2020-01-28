@@ -1,6 +1,6 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "@while-and-for/root",
+  "private": false,
   "scripts": {
     "clean": "npx lerna clean -y && npx lerna bootstrap --hoist"
   },
@@ -48,5 +48,25 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "yup": "^0.28.1"
-  }
+  },
+  "description": "Common Components",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/While-And-For/while-and-for.git"
+  },
+  "keywords": [
+    "while",
+    "and",
+    "for",
+    "dev",
+    "kit"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/While-And-For/while-and-for/issues"
+  },
+  "homepage": "https://github.com/While-And-For/while-and-for#readme"
 }

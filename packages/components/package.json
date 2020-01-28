@@ -1,5 +1,6 @@
 {
   "name": "@while-and-for/components",
+  "private": false,
   "version": "0.0.1",
   "description": "Common components wrapper for antd",
   "keywords": [
@@ -28,7 +29,7 @@
     "url": "git+https://github.com/While-And-For/while-and-for.git"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack"
+    "build": "webpack"
   },
   "bugs": {
     "url": "https://github.com/While-And-For/while-and-for/issues"
@@ -79,5 +80,6 @@
         ]
       }
     }
-  }
+  },
+  "dependencies": {}
 }
