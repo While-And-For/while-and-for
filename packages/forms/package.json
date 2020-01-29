@@ -13,7 +13,7 @@
   "homepage": "https://github.com/While-And-For/while-and-for#readme",
   "license": "ISC",
   "main": "./dist/index.bundle.js",
-  "types": "./index.d.ts",
+  "types": "./src/index",
   "directories": {
     "src": "src",
     "test": "__tests__",
@@ -21,7 +21,7 @@
   },
   "files": [
     "dist",
-    "index.d.ts"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
