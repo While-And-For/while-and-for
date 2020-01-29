@@ -45,14 +45,12 @@ const ResetPassword: React.SFC<Props> = ({
     {({ isSubmitting }: FormHelpers): React.ReactNode => (
       <Form>
         <Field
-          required
           type="password"
           name="password"
           placeholder="Password"
           component={Password}
         />
         <Field
-          required
           type="password"
           name="repeatPassword"
           placeholder="Password"
