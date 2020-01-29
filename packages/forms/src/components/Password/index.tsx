@@ -14,6 +14,7 @@ const Password: SFC<InputProps<string>> = ({
   error,
   label,
   placeholder,
+  prefix,
   required,
   status,
   touched,
@@ -32,6 +33,7 @@ const Password: SFC<InputProps<string>> = ({
       onChange={field.onChange}
       onBlur={field.onBlur}
       placeholder={placeholder}
+      prefix={prefix}
     />
   </Item>
 );
