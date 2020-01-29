@@ -1,5 +1,6 @@
 {
   "name": "@while-and-for/root",
+  "version": "0.0.3-alpha.1",
   "private": false,
   "scripts": {
     "clean": "npx lerna clean -y && npx lerna bootstrap --hoist"
@@ -50,7 +51,6 @@
     "yup": "^0.28.1"
   },
   "description": "Common Components",
-  "version": "0.0.1",
   "main": "index.js",
   "repository": {
     "type": "git",
