@@ -35,7 +35,6 @@ const ForgotPassword: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
     {({ isSubmitting }: FormHelpers): React.ReactNode => (
       <Form>
         <Field
-          required
           name="email"
           placeholder="Email"
           prefix={<Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />}
