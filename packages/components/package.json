@@ -12,14 +12,15 @@
   "homepage": "https://github.com/While-And-For/while-and-for#readme",
   "license": "ISC",
   "main": "dist/index.bundle.js",
-  "types": "src/index.d.ts",
+  "types": "index.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__",
     "dist": "dist"
   },
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "publishConfig": {
     "access": "public"

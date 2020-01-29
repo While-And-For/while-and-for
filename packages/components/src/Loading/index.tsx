@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 import { Icon, Typography } from 'antd';
@@ -24,7 +24,7 @@ const CustomIcon = styled(Icon)`
   margin-bottom: 25px;
 `;
 
-const Loading: FunctionComponent<{}> = () => (
+const Loading: React.FC = () => (
   <Container>
     <Row>
       <CustomIcon spin type="loading" />
