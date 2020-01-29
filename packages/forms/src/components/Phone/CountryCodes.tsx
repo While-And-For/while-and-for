@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, FunctionComponent } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 
 import { Select } from 'antd';
 
@@ -11,7 +11,7 @@ type Props = {
   setPrefix: Dispatch<SetStateAction<string | undefined>>;
 };
 
-const CountryCodes: FunctionComponent<Props> = ({ prefix, setPrefix }) => (
+const CountryCodes: React.SFC<Props> = ({ prefix, setPrefix }) => (
   <Select
     style={{ minWidth: '97px' }}
     optionFilterProp="children"

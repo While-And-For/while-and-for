@@ -1,3 +1,3 @@
-import { FunctionComponent } from 'react';
-declare const Loading: FunctionComponent<{}>;
+import React from 'react';
+declare const Loading: React.FC;
 export default Loading;
