@@ -12,16 +12,14 @@
   "author": "Regan Langford <regan.reihana@gmail.com>",
   "homepage": "https://github.com/While-And-For/while-and-for#readme",
   "license": "ISC",
-  "main": "./dist/index.bundle.js",
-  "types": "./src/index",
+  "main": "dist/index.js",
+  "types": "dist/index",
   "directories": {
-    "src": "src",
     "test": "__tests__",
     "dist": "dist"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -31,7 +29,7 @@
     "url": "git+https://github.com/While-And-For/while-and-for.git"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack"
+    "build": "tsc --outDir ./dist"
   },
   "bugs": {
     "url": "https://github.com/While-And-For/while-and-for/issues"

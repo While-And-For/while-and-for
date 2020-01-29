@@ -1,0 +1,1 @@
+{"version":3,"file":"FormSchema.js","sourceRoot":"","sources":["../../../src/forms/ForgotPassword/FormSchema.ts"],"names":[],"mappings":";;;AAAA,+CAA2B;AAE3B,kBAAe,GAAG,CAAC,MAAM,EAAE,CAAC,KAAK,CAAC;IAChC,KAAK,EAAE,GAAG,CAAC,MAAM,EAAE;SAChB,QAAQ,CAAC,mBAAmB,CAAC;SAC7B,KAAK,CAAC,mBAAmB,CAAC;CAC9B,CAAC,CAAC"}
