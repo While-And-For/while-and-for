@@ -47,4 +47,4 @@ const TagSelect: React.SFC<Props> = ({
   </Item>
 );
 
-export default withFieldMeta(TagSelect);
+export default withFieldMeta<Props>(TagSelect);

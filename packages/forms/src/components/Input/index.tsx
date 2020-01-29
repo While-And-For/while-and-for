@@ -53,4 +53,4 @@ Input.defaultProps = {
 };
 
 
-export default withFieldMeta(Input);
+export default withFieldMeta<InputPropsExtended>(Input);

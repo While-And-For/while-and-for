@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { SFC, useState } from 'react';
 
 import { AutoComplete as AutoCompleteDefault } from 'antd';
 
@@ -12,9 +12,9 @@ const lower = (value: string): string => value.toLowerCase();
 type Props = {
   dataSource: string[];
   setFieldValue: any;
-} & InputProps<string>;
+};
 
-const AutoComplete: FunctionComponent<Props> = ({
+const AutoComplete: SFC<InputProps<string, Props>> = ({
   dataSource,
   error,
   field,
@@ -61,4 +61,4 @@ const AutoComplete: FunctionComponent<Props> = ({
   );
 };
 
-export default withFieldMeta(AutoComplete);
+export default withFieldMeta<InputProps<string, Props>>(AutoComplete);

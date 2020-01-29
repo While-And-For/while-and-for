@@ -1,4 +1,4 @@
-import React, { ReactText, FunctionComponent } from 'react';
+import React, { ReactText, SFC } from 'react';
 
 import { InputNumber as InputNumberDefault } from 'antd';
 
@@ -12,7 +12,7 @@ type Props = {
   parser?: ((displayValue: string | undefined) => ReactText) | undefined;
 } & InputProps<number>;
 
-const InputNumber: FunctionComponent<Props> = ({
+const InputNumber: SFC<Props> = ({
   field,
   formatter,
   error,
@@ -51,4 +51,4 @@ InputNumber.defaultProps = {
   validate: true
 };
 
-export default withFieldMeta(InputNumber);
+export default withFieldMeta<Props>(InputNumber);

@@ -1,29 +1,9 @@
 import React from 'react';
 import _get from 'lodash.get';
 
-type DefaultFieldProps = {
-  field: {
-    name: string;
-    value: any;
-    onChange: (a: any) => void;
-  };
-  form: {
-    errors: {
-      [key: string]: string;
-    };
-    touched: {
-      [key: string]: boolean;
-    };
-    setFieldValue: (a: string, value: any) => void;
-  };
-  label: string;
-  placeholder: string;
-  validate?: boolean;
-};
-
 type DisplayName = string | 'Component';
 
-function getDisplayName(WrappedComponent: any): DisplayName {
+function getDisplayName<T>(WrappedComponent: React.SFC<T>): DisplayName {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
@@ -37,17 +17,20 @@ function getStatus(touched: boolean, error?: string, validate = true): Status {
 // TODO: Define exact prop spreading function for mapping specific component props
 // through to child component rather than using {...props}
 
-function withFieldMeta(WrappedComponent: any): any {
-  const FieldMeta: React.SFC<DefaultFieldProps> = ({
+function withFieldMeta<T>(WrappedComponent: React.SFC<T>): React.SFC<any> {
+  const FieldMeta: React.SFC<any> = ({
     field,
     form: { errors, touched, setFieldValue },
     label,
     placeholder,
+    prefix,
+    required,
+    style,
     validate,
     ...props
-  }: DefaultFieldProps) => {
+  }) => {
     const { name } = field;
-    const error = errors ? _get(errors, name) : undefined;
+    const error = _get(errors, name);
     const fieldTouched = _get(touched, name);
     const status = getStatus(fieldTouched, error, validate);
 
@@ -58,9 +41,13 @@ function withFieldMeta(WrappedComponent: any): any {
         error={error}
         field={field}
         label={label || placeholder}
+        name={name}
         placeholder={placeholder}
-        setFieldValue={(value: any): void => setFieldValue(name, value)}
+        prefix={prefix}
+        required={required}
+        setFieldValue={(value?: T): void => setFieldValue(name, value)}
         status={status}
+        style={style}
         touched={fieldTouched}
       />
     );
@@ -70,7 +57,9 @@ function withFieldMeta(WrappedComponent: any): any {
     validate: true
   };
 
-  FieldMeta.displayName = `withFieldMeta(${getDisplayName(WrappedComponent)})`;
+  FieldMeta.displayName = `withFieldMeta(${getDisplayName<T>(
+    WrappedComponent
+  )})`;
 
   return FieldMeta;
 }

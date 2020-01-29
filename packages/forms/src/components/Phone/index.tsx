@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { SFC, useEffect, useState } from 'react';
 
 import { Input } from 'antd';
 
@@ -16,7 +16,7 @@ const getPrefix = (phone: string | undefined): string => {
   return prefix ? prefix.value : '';
 };
 
-const Phone: FunctionComponent<InputProps<string>> = ({
+const Phone: SFC<InputProps<string>> = ({
   error,
   field,
   label,
@@ -64,4 +64,4 @@ const Phone: FunctionComponent<InputProps<string>> = ({
   );
 };
 
-export default withFieldMeta(Phone);
+export default withFieldMeta<InputProps<string>>(Phone);

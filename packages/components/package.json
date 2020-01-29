@@ -29,7 +29,7 @@
     "url": "git+https://github.com/While-And-For/while-and-for.git"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "./node_modules/.bin/webpack"
   },
   "bugs": {
     "url": "https://github.com/While-And-For/while-and-for/issues"
@@ -80,6 +80,5 @@
         ]
       }
     }
-  },
-  "dependencies": {}
+  }
 }

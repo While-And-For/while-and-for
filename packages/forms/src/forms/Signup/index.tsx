@@ -32,7 +32,7 @@ type Props = {
   submit: (a: Values) => void;
 };
 
-const SignupForm: React.SFC<Props> = ({
+const Signup: React.SFC<Props> = ({
   include,
   onError,
   onSuccess,
@@ -119,11 +119,11 @@ const SignupForm: React.SFC<Props> = ({
   );
 };
 
-SignupForm.defaultProps = {
+Signup.defaultProps = {
   include: {
     firstName: false,
     lastName: false
   }
 };
 
-export default SignupForm;
+export default Signup;

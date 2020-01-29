@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { SFC } from 'react';
 
 import { Select as SelectDefault } from 'antd';
 import withFieldMeta from '../../utilities/withFieldMeta';
@@ -14,7 +14,7 @@ type Props = {
   style: any;
 } & InputProps<any>;
 
-const Select: FunctionComponent<Props> = ({
+const Select: SFC<Props> = ({
   children,
   error,
   field,
@@ -58,4 +58,4 @@ Select.defaultProps = {
 
 export { Option };
 
-export default withFieldMeta(Select);
+export default withFieldMeta<Props>(Select);

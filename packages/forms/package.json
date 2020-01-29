@@ -13,14 +13,15 @@
   "homepage": "https://github.com/While-And-For/while-and-for#readme",
   "license": "ISC",
   "main": "./dist/index.bundle.js",
-  "types": "./src/index.d.ts",
+  "types": "./index.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__",
     "dist": "dist"
   },
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "publishConfig": {
     "access": "public"
@@ -30,7 +31,7 @@
     "url": "git+https://github.com/While-And-For/while-and-for.git"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "./node_modules/.bin/webpack"
   },
   "bugs": {
     "url": "https://github.com/While-And-For/while-and-for/issues"
@@ -40,7 +41,6 @@
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
-    "@types/lodash.debounce": "^4.0.6",
     "@types/lodash.get": "^4.4.6",
     "@types/node": "^13.1.8",
     "@types/styled-components": "^4.1.19",
@@ -71,6 +71,5 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.0"
-  },
-  "dependencies": {}
+  }
 }

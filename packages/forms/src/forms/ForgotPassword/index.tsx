@@ -22,7 +22,7 @@ type Props = {
   submit: (a: Values) => void;
 };
 
-const ForgotPasswordForm: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
+const ForgotPassword: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
   <Formik
     initialValues={initialValues}
     onSubmit={handleSubmit({
@@ -54,4 +54,4 @@ const ForgotPasswordForm: React.SFC<Props> = ({ onError, onSuccess, submit }) =>
   </Formik>
 );
 
-export default ForgotPasswordForm;
+export default ForgotPassword;

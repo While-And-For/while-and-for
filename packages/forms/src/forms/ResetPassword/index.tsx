@@ -28,7 +28,7 @@ type Props = {
   submit: (a: Values) => void;
 };
 
-const ResetPasswordForm: React.SFC<Props> = ({
+const ResetPassword: React.SFC<Props> = ({
   onError,
   onSuccess,
   submit
@@ -72,4 +72,4 @@ const ResetPasswordForm: React.SFC<Props> = ({
   </Formik>
 );
 
-export default ResetPasswordForm;
+export default ResetPassword;

@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 
 import { Input } from 'antd';
 
@@ -10,7 +10,7 @@ import Item from '../Item';
 
 const TextAreaDefault = Input.TextArea;
 
-const TextArea: FunctionComponent<InputProps<string>> = ({
+const TextArea: React.SFC<InputProps<string>> = ({
   field,
   error,
   label,
@@ -42,4 +42,4 @@ TextArea.defaultProps = {
   validate: true
 };
 
-export default withFieldMeta(TextArea);
+export default withFieldMeta<InputProps<string>>(TextArea);

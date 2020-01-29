@@ -13,5 +13,5 @@ declare type Props = {
     onSuccess?: (r: any) => void;
     submit: (a: Values) => void;
 };
-declare const SignupForm: React.SFC<Props>;
-export default SignupForm;
+declare const Signup: React.SFC<Props>;
+export default Signup;

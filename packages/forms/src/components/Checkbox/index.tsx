@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { Checkbox as CheckboxDefault, Form, Typography } from 'antd';
@@ -17,9 +17,9 @@ const Text = styled(TextDefault)`
 type Props = {
   childen: string | React.Component;
   onChange: (e: boolean) => void;
-} & InputProps<boolean>;
+};
 
-const Checkbox: FunctionComponent<Props> = ({
+const Checkbox: React.SFC<InputProps<boolean, Props>> = ({
   children,
   field,
   onChange,
@@ -43,4 +43,4 @@ const Checkbox: FunctionComponent<Props> = ({
   </Item>
 );
 
-export default withFieldMeta(Checkbox);
+export default withFieldMeta<InputProps<boolean, Props>>(Checkbox);

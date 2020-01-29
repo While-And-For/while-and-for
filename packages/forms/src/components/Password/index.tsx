@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { SFC } from 'react';
 
 import { Input as InputDefault } from 'antd';
 import withFieldMeta from '../../utilities/withFieldMeta';
@@ -9,7 +9,7 @@ import { InputProps } from '../interface';
 
 const PasswordDefault = InputDefault.Password;
 
-const Password: FunctionComponent<InputProps<string>> = ({
+const Password: SFC<InputProps<string>> = ({
   field,
   error,
   label,
@@ -43,4 +43,4 @@ Password.defaultProps = {
   validate: true
 };
 
-export default withFieldMeta(Password);
+export default withFieldMeta<InputProps<string>>(Password);

@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { SFC } from 'react';
 
 import { Col, Row, Switch as SwitchDefault, Typography } from 'antd';
 
@@ -13,7 +13,7 @@ type Props = {
   onChange: (value: boolean) => void;
 } & InputProps<boolean>;
 
-const Switch: FunctionComponent<Props> = ({ children, field, onChange }) => (
+const Switch: SFC<Props> = ({ children, field, onChange }) => (
   <Item>
     <Row type="flex" justify="space-between">
       <Col>
@@ -29,4 +29,4 @@ const Switch: FunctionComponent<Props> = ({ children, field, onChange }) => (
   </Item>
 );
 
-export default withFieldMeta(Switch);
+export default withFieldMeta<Props>(Switch);

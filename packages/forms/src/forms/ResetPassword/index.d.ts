@@ -8,5 +8,5 @@ declare type Props = {
     onSuccess?: (r: any) => void;
     submit: (a: Values) => void;
 };
-declare const ResetPasswordForm: React.SFC<Props>;
-export default ResetPasswordForm;
+declare const ResetPassword: React.SFC<Props>;
+export default ResetPassword;

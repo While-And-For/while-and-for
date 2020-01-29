@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { SFC } from 'react';
 import moment from 'moment';
 
 import { DatePicker as DatePickerDefault } from 'antd';
@@ -7,11 +7,11 @@ import withFieldMeta from '../../utilities/withFieldMeta';
 import Item from '../Item';
 import { InputProps } from '../interface';
 
-type Props = InputProps<moment.Moment> & {
+type Props = {
   setFieldValue: (a: moment.Moment | null) => void;
 };
 
-const DatePicker: FunctionComponent<Props> = ({
+const DatePicker: SFC<InputProps<moment.Moment, Props>> = ({
   error,
   field,
   label,
@@ -43,4 +43,4 @@ DatePicker.defaultProps = {
   error: undefined
 };
 
-export default withFieldMeta(DatePicker);
+export default withFieldMeta<InputProps<moment.Moment, Props>>(DatePicker);

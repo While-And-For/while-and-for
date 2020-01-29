@@ -24,7 +24,7 @@ type Props = {
   submit: (values: Values) => void;
 };
 
-const LoginForm: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
+const Login: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
   <Formik
     initialValues={initialValues}
     onSubmit={handleSubmit({
@@ -61,4 +61,4 @@ const LoginForm: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
   </Formik>
 );
 
-export default LoginForm;
+export default Login;
