@@ -21,7 +21,7 @@ var ResetPassword = function (_a) {
         var isSubmitting = _a.isSubmitting;
         return (react_1.default.createElement(formik_1.Form, null,
             react_1.default.createElement(formik_1.Field, { type: "password", name: "password", placeholder: "Password", component: components_1.Password }),
-            react_1.default.createElement(formik_1.Field, { type: "password", name: "repeatPassword", placeholder: "Password", component: components_1.Password }),
+            react_1.default.createElement(formik_1.Field, { type: "password", name: "repeatPassword", placeholder: "Repeat password", component: components_1.Password }),
             react_1.default.createElement(antd_1.Button, { block: true, type: "primary", htmlType: "submit", disabled: isSubmitting, loading: isSubmitting }, "Submit")));
     }));
 };

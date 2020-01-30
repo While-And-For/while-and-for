@@ -18,7 +18,7 @@ var ForgotPassword = function (_a) {
         var isSubmitting = _a.isSubmitting;
         return (react_1.default.createElement(formik_1.Form, null,
             react_1.default.createElement(formik_1.Field, { name: "email", placeholder: "Email", prefix: react_1.default.createElement(antd_1.Icon, { type: "user", style: { color: 'rgba(0, 0, 0, 0.25)' } }), component: components_1.Input }),
-            react_1.default.createElement(antd_1.Button, { disabled: isSubmitting, loading: isSubmitting, type: "primary", htmlType: "submit" }, "Submit")));
+            react_1.default.createElement(antd_1.Button, { block: true, disabled: isSubmitting, loading: isSubmitting, type: "primary", htmlType: "submit" }, "Submit")));
     }));
 };
 exports.default = ForgotPassword;

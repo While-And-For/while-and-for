@@ -59,7 +59,7 @@ var Signup = function (_a) {
                 }); } })),
             react_1.default.createElement(formik_1.Field, { name: "password", component: components_1.Password, placeholder: "Password" }),
             react_1.default.createElement(formik_1.Field, { name: "repeatPassword", component: components_1.Password, placeholder: "Repeat password" }),
-            react_1.default.createElement(antd_1.Button, { disabled: isSubmitting, loading: isSubmitting, htmlType: "submit", type: "primary" }, "Submit")));
+            react_1.default.createElement(antd_1.Button, { block: true, disabled: isSubmitting, loading: isSubmitting, htmlType: "submit", type: "primary" }, "Submit")));
     }));
 };
 Signup.defaultProps = {
