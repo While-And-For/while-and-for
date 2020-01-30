@@ -49,6 +49,7 @@ const Login: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
           prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
         />
         <Button
+          block
           disabled={isSubmitting}
           loading={isSubmitting}
           type="primary"

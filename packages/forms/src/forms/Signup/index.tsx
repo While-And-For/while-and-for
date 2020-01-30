@@ -106,6 +106,7 @@ const Signup: React.SFC<Props> = ({
             placeholder="Repeat password"
           />
           <Button
+            block
             disabled={isSubmitting}
             loading={isSubmitting}
             htmlType="submit"

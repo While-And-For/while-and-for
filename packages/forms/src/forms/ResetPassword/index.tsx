@@ -53,7 +53,7 @@ const ResetPassword: React.SFC<Props> = ({
         <Field
           type="password"
           name="repeatPassword"
-          placeholder="Password"
+          placeholder="Repeat password"
           component={Password}
         />
         <Button

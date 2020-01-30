@@ -41,6 +41,7 @@ const ForgotPassword: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
           component={Input}
         />
         <Button
+          block
           disabled={isSubmitting}
           loading={isSubmitting}
           type="primary"
