@@ -13,7 +13,8 @@ type FormHelpers = {
 };
 
 type Values = {
-  password?: string;
+  currentPassword?: string;
+  newPassword?: string;
   repeatPassword?: string;
 };
 

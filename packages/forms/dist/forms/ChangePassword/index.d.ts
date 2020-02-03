@@ -1,6 +1,7 @@
 import React from 'react';
 declare type Values = {
-    password?: string;
+    currentPassword?: string;
+    newPassword?: string;
     repeatPassword?: string;
 };
 declare type Props = {
