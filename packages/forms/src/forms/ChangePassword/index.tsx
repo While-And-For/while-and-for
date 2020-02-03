@@ -28,7 +28,7 @@ type Props = {
   submit: (a: Values) => void;
 };
 
-const ResetPassword: React.SFC<Props> = ({
+const ChangePassword: React.SFC<Props> = ({
   onError,
   onSuccess,
   submit
@@ -70,10 +70,10 @@ const ResetPassword: React.SFC<Props> = ({
           loading={isSubmitting}
         >
           Submit
-      </Button>
+        </Button>
       </Form>
     )}
   </Formik>
 );
 
-export default ResetPassword;
+export default ChangePassword;

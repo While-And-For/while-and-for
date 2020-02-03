@@ -11,7 +11,7 @@ var initialValues = {
     password: undefined,
     repeatPassword: undefined
 };
-var ResetPassword = function (_a) {
+var ChangePassword = function (_a) {
     var onError = _a.onError, onSuccess = _a.onSuccess, submit = _a.submit;
     return (react_1.default.createElement(formik_1.Formik, { initialValues: initialValues, onSubmit: utilities_1.handleSubmit({
             onError: onError,
@@ -26,5 +26,5 @@ var ResetPassword = function (_a) {
             react_1.default.createElement(antd_1.Button, { block: true, type: "primary", htmlType: "submit", disabled: isSubmitting, loading: isSubmitting }, "Submit")));
     }));
 };
-exports.default = ResetPassword;
+exports.default = ChangePassword;
 //# sourceMappingURL=index.js.map
