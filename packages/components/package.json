@@ -1,7 +1,7 @@
 {
   "name": "@while-and-for/components",
   "private": false,
-  "version": "0.0.3-alpha.10",
+  "version": "0.0.3-alpha.11",
   "description": "Common components wrapper for antd",
   "keywords": [
     "antdesign",
