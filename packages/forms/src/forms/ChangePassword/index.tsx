@@ -52,7 +52,7 @@ const ChangePassword: React.SFC<Props> = ({
         />
         <Field
           type="password"
-          name="password"
+          name="newPassword"
           placeholder="New password"
           component={Password}
         />
