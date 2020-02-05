@@ -1,6 +1,6 @@
 import React, { ReactText, SFC } from 'react';
 
-import { InputNumber as InputNumberDefault } from 'antd';
+import InputNumberDefault from './InputNumber';
 
 import withFieldMeta from '../../utilities/withFieldMeta';
 
