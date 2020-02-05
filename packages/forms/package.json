@@ -29,7 +29,7 @@
     "url": "git+https://github.com/While-And-For/while-and-for.git"
   },
   "scripts": {
-    "build": "tsc --outDir ./dist"
+    "build": "rm -rf ./dist && tsc --outDir ./dist"
   },
   "bugs": {
     "url": "https://github.com/While-And-For/while-and-for/issues"

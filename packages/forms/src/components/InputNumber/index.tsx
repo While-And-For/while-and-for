@@ -1,11 +1,16 @@
 import React, { ReactText, SFC } from 'react';
+import styled from 'styled-components';
 
-import InputNumberDefault from './InputNumber';
+import { InputNumber as InputNumberDefault } from 'antd';
 
 import withFieldMeta from '../../utilities/withFieldMeta';
 
 import Item from '../Item';
 import { InputProps } from '../interface';
+
+const StyledInputNumber = styled(InputNumberDefault)`
+  width: 100%;
+`;
 
 type Props = {
   formatter?: ((value: string | number | undefined) => string) | undefined;
@@ -33,7 +38,7 @@ const InputNumber: SFC<Props> = ({
       required={required}
       validateStatus={validate ? status : ''}
     >
-      <InputNumberDefault
+      <StyledInputNumber
         formatter={formatter}
         name={field.name}
         value={field.value}
