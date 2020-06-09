@@ -79,5 +79,8 @@
         ]
       }
     }
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1"
   }
 }
