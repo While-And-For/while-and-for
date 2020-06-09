@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { Icon, Typography } from 'antd';
+import { Typography } from 'antd';
 
 const { Title } = Typography;
 
