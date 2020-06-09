@@ -1,7 +1,9 @@
 import React from 'react';
 import * as Yup from 'yup';
 
-import { Button, Icon } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+
+import { Button } from 'antd';
 import { Field, Form, Formik } from 'formik';
 
 import FormSchema from './FormSchema';
@@ -62,7 +64,7 @@ const Signup: React.SFC<Props> = ({
             component={Input}
             placeholder="Email"
             prefix={
-              <Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+              <UserOutlined style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
             }
           />
           {firstName && (

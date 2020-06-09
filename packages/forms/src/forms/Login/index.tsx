@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Button, Icon } from 'antd';
+import { LockOutlined, UserOutlined } from '@ant-design/icons';
+
+import { Button } from 'antd';
 import { Field, Formik, Form } from 'formik';
 
 import FormSchema from './FormSchema';
@@ -40,13 +42,13 @@ const Login: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
           name="email"
           placeholder="Email"
           component={Input}
-          prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+          prefix={<UserOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
         />
         <Field
           name="password"
           placeholder="Password"
           component={Password}
-          prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+          prefix={<LockOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
         />
         <Button
           block

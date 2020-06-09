@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Checkbox as CheckboxDefault, Form, Typography } from 'antd';
+import { Form } from '@ant-design/compatible';
+import '@ant-design/compatible/assets/index.css';
+
+import { Checkbox as CheckboxDefault, Typography } from 'antd';
 
 import withFieldMeta from '../../utilities/withFieldMeta';
 

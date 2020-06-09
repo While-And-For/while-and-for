@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Button, Icon } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+
+import { Button } from 'antd';
 import { Field, Formik, Form } from 'formik';
 
 import { Input } from '../../components';
@@ -37,7 +39,7 @@ const ForgotPassword: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
         <Field
           name="email"
           placeholder="Email"
-          prefix={<Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />}
+          prefix={<UserOutlined style={{ color: 'rgba(0, 0, 0, 0.25)' }} />}
           component={Input}
         />
         <Button

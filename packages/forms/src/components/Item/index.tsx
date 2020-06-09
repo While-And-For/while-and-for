@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 import { Properties } from 'csstype';
 
-import { Form } from 'antd';
+import { Form } from '@ant-design/compatible';
+import '@ant-design/compatible/assets/index.css';
 
 import formItemLayout from '../../utilities/formItemLayout';
 
