@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
+
+import { Loading3QuartersOutlined } from '@ant-design/icons';
 import { Typography } from 'antd';
 
 const { Title } = Typography;
@@ -18,7 +20,7 @@ const Row = styled.div`
   align-items: center;
 `;
 
-const CustomIcon = styled(Icon)`
+const CustomIcon = styled(Loading3QuartersOutlined)`
   font-size: 4em;
   color: #e80044;
   margin-bottom: 25px;

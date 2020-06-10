@@ -5,5 +5,5 @@ export default Yup.object().shape({
   newPassword: Yup.string().required('new password required'),
   repeatPassword: Yup.string()
     .required('repeat password required')
-    .oneOf([Yup.ref('newPassword'), null], 'passwords must match')
+    .oneOf([Yup.ref('newPassword')], 'passwords must match')
 });

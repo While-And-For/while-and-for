@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 var react_1 = tslib_1.__importDefault(require("react"));
 var Yup = tslib_1.__importStar(require("yup"));
+var icons_1 = require("@ant-design/icons");
 var antd_1 = require("antd");
 var formik_1 = require("formik");
 var FormSchema_1 = tslib_1.__importDefault(require("./FormSchema"));
@@ -18,7 +19,7 @@ var Signup = function (_a) {
         }), validationSchema: FormSchema_1.default }, function (_a) {
         var isSubmitting = _a.isSubmitting;
         return (react_1.default.createElement(formik_1.Form, null,
-            react_1.default.createElement(formik_1.Field, { name: "email", component: components_1.Input, placeholder: "Email", prefix: react_1.default.createElement(antd_1.Icon, { type: "user", style: { color: 'rgba(0, 0, 0, 0.25)' } }) }),
+            react_1.default.createElement(formik_1.Field, { name: "email", component: components_1.Input, placeholder: "Email", prefix: react_1.default.createElement(icons_1.UserOutlined, { style: { color: 'rgba(0, 0, 0, 0.25)' } }) }),
             firstName && (react_1.default.createElement(formik_1.Field, { name: "firstName", component: components_1.Input, placeholder: "First name", validate: function (value) { return tslib_1.__awaiter(void 0, void 0, void 0, function () {
                     var err_1;
                     return tslib_1.__generator(this, function (_a) {

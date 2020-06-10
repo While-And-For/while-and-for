@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 var react_1 = tslib_1.__importDefault(require("react"));
 var styled_components_1 = tslib_1.__importDefault(require("styled-components"));
+var compatible_1 = require("@ant-design/compatible");
+require("@ant-design/compatible/assets/index.css");
 var antd_1 = require("antd");
 var withFieldMeta_1 = tslib_1.__importDefault(require("../../utilities/withFieldMeta"));
-var Item = antd_1.Form.Item;
+var Item = compatible_1.Form.Item;
 var TextDefault = antd_1.Typography.Text;
 var Text = styled_components_1.default(TextDefault)(templateObject_1 || (templateObject_1 = tslib_1.__makeTemplateObject(["\n  line-height: 1.5 !important;\n"], ["\n  line-height: 1.5 !important;\n"])));
 var Checkbox = function (_a) {

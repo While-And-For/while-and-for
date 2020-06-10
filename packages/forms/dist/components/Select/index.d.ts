@@ -1,5 +1,5 @@
 import React from 'react';
-declare const Option: React.ClassicComponentClass<import("antd/lib/select").OptionProps>;
+declare const Option: import("rc-select/lib/Option").OptionFC;
 export { Option };
 declare const _default: React.SFC<any>;
 export default _default;

@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Properties } from 'csstype';
+import '@ant-design/compatible/assets/index.css';
 declare type Props = {
     children: string | ReactNode;
     colon?: boolean;
