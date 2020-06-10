@@ -40,7 +40,7 @@ const Select: SFC<Props> = ({
     <SelectDefault
       defaultValue={field.value}
       onChange={onChange || setFieldValue}
-      mode={multiple ? 'multiple' : 'default'}
+      mode={multiple ? 'multiple' : undefined}
       placeholder={placeholder}
       value={field.value}
     >

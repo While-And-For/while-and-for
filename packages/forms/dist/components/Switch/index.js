@@ -9,7 +9,7 @@ var Text = antd_1.Typography.Text;
 var Switch = function (_a) {
     var children = _a.children, field = _a.field, onChange = _a.onChange;
     return (react_1.default.createElement(Item_1.default, null,
-        react_1.default.createElement(antd_1.Row, { type: "flex", justify: "space-between" },
+        react_1.default.createElement(antd_1.Row, { justify: "space-between" },
             react_1.default.createElement(antd_1.Col, null,
                 react_1.default.createElement(Text, null, children)),
             react_1.default.createElement(antd_1.Col, null,

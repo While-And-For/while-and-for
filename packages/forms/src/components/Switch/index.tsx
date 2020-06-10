@@ -15,7 +15,7 @@ type Props = {
 
 const Switch: SFC<Props> = ({ children, field, onChange }) => (
   <Item>
-    <Row type="flex" justify="space-between">
+    <Row justify="space-between">
       <Col>
         <Text>{children}</Text>
       </Col>
