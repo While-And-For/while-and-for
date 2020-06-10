@@ -26,7 +26,7 @@ const Checkbox: React.SFC<InputProps<boolean, Props>> = ({
   children,
   field,
   onChange,
-  setFieldValue
+  setFieldValue,
 }) => (
   <Item>
     <CheckboxDefault
