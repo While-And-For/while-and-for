@@ -9,6 +9,8 @@ var ContainerFlex_1 = require("./ContainerFlex");
 Object.defineProperty(exports, "ContainerFlex", { enumerable: true, get: function () { return ContainerFlex_1.default; } });
 var Content_1 = require("./Content");
 Object.defineProperty(exports, "Content", { enumerable: true, get: function () { return Content_1.default; } });
+var ErrorBoundary_1 = require("./ErrorBoundary");
+Object.defineProperty(exports, "ErrorBoundary", { enumerable: true, get: function () { return ErrorBoundary_1.default; } });
 var ErrorComponent_1 = require("./ErrorComponent");
 Object.defineProperty(exports, "ErrorComponent", { enumerable: true, get: function () { return ErrorComponent_1.default; } });
 var Header_1 = require("./Header");
