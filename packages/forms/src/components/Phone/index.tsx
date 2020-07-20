@@ -17,6 +17,7 @@ const getPrefix = (phone: string | undefined): string => {
 };
 
 const Phone: SFC<InputProps<string>> = ({
+  disabled,
   error,
   field,
   label,
@@ -51,6 +52,7 @@ const Phone: SFC<InputProps<string>> = ({
       validateStatus={validate ? status : ''}
     >
       <Input
+        disabled={disabled}
         name={field.name}
         value={inputValue}
         onChange={({ target: { value } }): void => {

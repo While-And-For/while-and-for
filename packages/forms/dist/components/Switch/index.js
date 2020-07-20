@@ -7,13 +7,13 @@ var withFieldMeta_1 = tslib_1.__importDefault(require("../../utilities/withField
 var Item_1 = tslib_1.__importDefault(require("../Item"));
 var Text = antd_1.Typography.Text;
 var Switch = function (_a) {
-    var children = _a.children, field = _a.field, onChange = _a.onChange;
+    var children = _a.children, disabled = _a.disabled, field = _a.field, onChange = _a.onChange;
     return (react_1.default.createElement(Item_1.default, null,
         react_1.default.createElement(antd_1.Row, { justify: "space-between" },
             react_1.default.createElement(antd_1.Col, null,
                 react_1.default.createElement(Text, null, children)),
             react_1.default.createElement(antd_1.Col, null,
-                react_1.default.createElement(antd_1.Switch, { checked: field.value, onChange: onChange || field.onChange })))));
+                react_1.default.createElement(antd_1.Switch, { checked: field.value, disabled: disabled, onChange: onChange || field.onChange })))));
 };
 exports.default = withFieldMeta_1.default(Switch);
 //# sourceMappingURL=index.js.map

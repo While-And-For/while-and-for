@@ -10,6 +10,7 @@ export declare type InputProps<T, U = {}> = U & {
     multiple?: boolean;
     checked?: boolean;
   };
+  disabled?: boolean;
   error?: string;
   label: string;
   name: string;

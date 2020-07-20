@@ -1,5 +1,6 @@
 import React, { Dispatch, SetStateAction } from 'react';
 declare type Props = {
+    disabled?: boolean;
     prefix?: string;
     setPrefix: Dispatch<SetStateAction<string | undefined>>;
 };

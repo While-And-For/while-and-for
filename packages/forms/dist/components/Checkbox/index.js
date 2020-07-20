@@ -11,9 +11,9 @@ var Item = compatible_1.Form.Item;
 var TextDefault = antd_1.Typography.Text;
 var Text = styled_components_1.default(TextDefault)(templateObject_1 || (templateObject_1 = tslib_1.__makeTemplateObject(["\n  line-height: 1.5 !important;\n"], ["\n  line-height: 1.5 !important;\n"])));
 var Checkbox = function (_a) {
-    var children = _a.children, field = _a.field, onChange = _a.onChange, setFieldValue = _a.setFieldValue;
+    var children = _a.children, disabled = _a.disabled, field = _a.field, onChange = _a.onChange, setFieldValue = _a.setFieldValue;
     return (react_1.default.createElement(Item, null,
-        react_1.default.createElement(antd_1.Checkbox, { checked: field.value, name: field.name, onChange: function (_a) {
+        react_1.default.createElement(antd_1.Checkbox, { checked: field.value, disabled: disabled, name: field.name, onChange: function (_a) {
                 var checked = _a.target.checked;
                 if (typeof onChange === 'function') {
                     onChange(checked);

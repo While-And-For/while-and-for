@@ -16,6 +16,7 @@ type Props = {
 
 const AutoComplete: SFC<InputProps<string, Props>> = ({
   dataSource,
+  disabled,
   error,
   field,
   label,
@@ -51,6 +52,7 @@ const AutoComplete: SFC<InputProps<string, Props>> = ({
     >
       <AutoCompleteDefault
         dataSource={data}
+        disabled={disabled}
         onChange={setFieldValue}
         onSelect={setFieldValue}
         onSearch={handleSearch}

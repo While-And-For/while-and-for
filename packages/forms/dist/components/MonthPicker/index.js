@@ -7,9 +7,9 @@ var withFieldMeta_1 = tslib_1.__importDefault(require("../../utilities/withField
 var Item_1 = tslib_1.__importDefault(require("../Item"));
 var MonthPickerDefault = antd_1.DatePicker.MonthPicker;
 var MonthPicker = function (_a) {
-    var error = _a.error, field = _a.field, label = _a.label, placeholder = _a.placeholder, required = _a.required, setFieldValue = _a.setFieldValue, status = _a.status, touched = _a.touched, validate = _a.validate;
+    var disabled = _a.disabled, error = _a.error, field = _a.field, label = _a.label, placeholder = _a.placeholder, required = _a.required, setFieldValue = _a.setFieldValue, status = _a.status, touched = _a.touched, validate = _a.validate;
     return (react_1.default.createElement(Item_1.default, { hasFeedback: validate, help: touched && error, label: label || placeholder, required: required, validateStatus: touched ? status : '' },
-        react_1.default.createElement(MonthPickerDefault, { placeholder: placeholder, name: field.name, onChange: setFieldValue, value: field.value })));
+        react_1.default.createElement(MonthPickerDefault, { disabled: disabled, placeholder: placeholder, name: field.name, onChange: setFieldValue, value: field.value })));
 };
 MonthPicker.defaultProps = {
     error: undefined

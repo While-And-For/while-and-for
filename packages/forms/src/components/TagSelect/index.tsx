@@ -18,8 +18,9 @@ type Props = {
 } & InputProps<any>;
 
 const TagSelect: React.SFC<Props> = ({
-  field,
+  disabled,
   error,
+  field,
   label,
   options,
   required,
@@ -38,7 +39,9 @@ const TagSelect: React.SFC<Props> = ({
         <CheckableTag
           key={value}
           checked={value === field.value}
-          onChange={(): void => setFieldValue(value)}
+          onChange={(): void => {
+            !disabled && setFieldValue(value);
+          }}
         >
           {label}
         </CheckableTag>

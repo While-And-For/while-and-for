@@ -14,6 +14,7 @@ type Props = InputProps<moment.Moment> & {
 };
 
 const MonthPicker: SFC<Props> = ({
+  disabled,
   error,
   field,
   label,
@@ -32,6 +33,7 @@ const MonthPicker: SFC<Props> = ({
     validateStatus={touched ? status : ''}
   >
     <MonthPickerDefault
+      disabled={disabled}
       placeholder={placeholder}
       name={field.name}
       onChange={setFieldValue}

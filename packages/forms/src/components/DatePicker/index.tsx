@@ -12,6 +12,7 @@ type Props = {
 };
 
 const DatePicker: SFC<InputProps<moment.Moment, Props>> = ({
+  disabled,
   error,
   field,
   label,
@@ -30,6 +31,7 @@ const DatePicker: SFC<InputProps<moment.Moment, Props>> = ({
     validateStatus={touched ? status : ''}
   >
     <DatePickerDefault
+      disabled={disabled}
       format="Do MMM YYYY"
       placeholder={placeholder}
       name={field.name}

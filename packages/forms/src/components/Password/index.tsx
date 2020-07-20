@@ -10,8 +10,9 @@ import { InputProps } from '../interface';
 const PasswordDefault = InputDefault.Password;
 
 const Password: SFC<InputProps<string>> = ({
-  field,
+  disabled,
   error,
+  field,
   label,
   placeholder,
   prefix,
@@ -28,6 +29,7 @@ const Password: SFC<InputProps<string>> = ({
     validateStatus={validate ? status : ''}
   >
     <PasswordDefault
+      disabled={disabled}
       name={field.name}
       value={field.value}
       onChange={field.onChange}

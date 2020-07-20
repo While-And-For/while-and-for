@@ -13,7 +13,7 @@ type Props = {
   onChange: (value: boolean) => void;
 } & InputProps<boolean>;
 
-const Switch: SFC<Props> = ({ children, field, onChange }) => (
+const Switch: SFC<Props> = ({ children, disabled, field, onChange }) => (
   <Item>
     <Row justify="space-between">
       <Col>
@@ -22,6 +22,7 @@ const Switch: SFC<Props> = ({ children, field, onChange }) => (
       <Col>
         <SwitchDefault
           checked={field.value}
+          disabled={disabled}
           onChange={onChange || field.onChange}
         />
       </Col>

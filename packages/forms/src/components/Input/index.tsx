@@ -14,8 +14,9 @@ type InputPropsExtended = InputProps<string> & {
 
 const Input: React.SFC<InputPropsExtended> = ({
   addonAfter,
-  field,
+  disabled,
   error,
+  field,
   label,
   placeholder,
   prefix,
@@ -33,6 +34,7 @@ const Input: React.SFC<InputPropsExtended> = ({
   >
     <InputDefault
       addonAfter={addonAfter}
+      disabled={disabled}
       name={field.name}
       value={field.value}
       onChange={field.onChange}

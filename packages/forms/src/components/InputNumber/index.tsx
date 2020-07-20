@@ -18,9 +18,10 @@ type Props = {
 } & InputProps<number>;
 
 const InputNumber: SFC<Props> = ({
+  disabled,
+  error,
   field,
   formatter,
-  error,
   label,
   parser,
   placeholder,
@@ -39,6 +40,7 @@ const InputNumber: SFC<Props> = ({
       validateStatus={validate ? status : ''}
     >
       <StyledInputNumber
+        disabled={disabled}
         formatter={formatter}
         name={field.name}
         value={field.value}

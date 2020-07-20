@@ -7,12 +7,14 @@ import data from './data';
 const { Option } = Select;
 
 type Props = {
+  disabled?: boolean;
   prefix?: string;
   setPrefix: Dispatch<SetStateAction<string | undefined>>;
 };
 
-const CountryCodes: React.SFC<Props> = ({ prefix, setPrefix }) => (
+const CountryCodes: React.SFC<Props> = ({ disabled, prefix, setPrefix }) => (
   <Select
+    disabled={disabled}
     style={{ minWidth: '97px' }}
     optionFilterProp="children"
     onChange={setPrefix}

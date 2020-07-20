@@ -16,6 +16,7 @@ type Props = {
 
 const Select: SFC<Props> = ({
   children,
+  disabled,
   error,
   field,
   label,
@@ -39,6 +40,7 @@ const Select: SFC<Props> = ({
   >
     <SelectDefault
       defaultValue={field.value}
+      disabled={disabled}
       onChange={onChange || setFieldValue}
       mode={multiple ? 'multiple' : undefined}
       placeholder={placeholder}

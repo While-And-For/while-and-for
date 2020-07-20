@@ -11,8 +11,9 @@ import Item from '../Item';
 const TextAreaDefault = Input.TextArea;
 
 const TextArea: React.SFC<InputProps<string>> = ({
-  field,
+  disabled,
   error,
+  field,
   label,
   placeholder,
   required,
@@ -28,6 +29,7 @@ const TextArea: React.SFC<InputProps<string>> = ({
     validateStatus={validate ? status : ''}
   >
     <TextAreaDefault
+      disabled={disabled}
       name={field.name}
       value={field.value}
       onChange={field.onChange}

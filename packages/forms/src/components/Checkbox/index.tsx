@@ -24,6 +24,7 @@ type Props = {
 
 const Checkbox: React.SFC<InputProps<boolean, Props>> = ({
   children,
+  disabled,
   field,
   onChange,
   setFieldValue,
@@ -31,6 +32,7 @@ const Checkbox: React.SFC<InputProps<boolean, Props>> = ({
   <Item>
     <CheckboxDefault
       checked={field.value}
+      disabled={disabled}
       name={field.name}
       onChange={({ target: { checked } }: any): void => {
         if (typeof onChange === 'function') {
