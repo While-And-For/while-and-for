@@ -10,7 +10,7 @@ import Item from '../Item';
 
 const TextAreaDefault = Input.TextArea;
 
-const TextArea: React.SFC<InputProps<string>> = ({
+const TextArea: React.FC<InputProps<string>> = ({
   disabled,
   error,
   field,

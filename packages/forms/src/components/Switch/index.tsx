@@ -1,4 +1,4 @@
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 
 import { Col, Row, Switch as SwitchDefault, Typography } from 'antd';
 
@@ -13,7 +13,7 @@ type Props = {
   onChange: (value: boolean) => void;
 } & InputProps<boolean>;
 
-const Switch: SFC<Props> = ({ children, disabled, field, onChange }) => (
+const Switch: FC<Props> = ({ children, disabled, field, onChange }) => (
   <Item>
     <Row justify="space-between">
       <Col>

@@ -1,4 +1,4 @@
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import moment from 'moment';
 
 import { DatePicker as DatePickerDefault } from 'antd';
@@ -11,7 +11,7 @@ type Props = {
   setFieldValue: (a: moment.Moment | null) => void;
 };
 
-const DatePicker: SFC<InputProps<moment.Moment, Props>> = ({
+const DatePicker: FC<InputProps<moment.Moment, Props>> = ({
   disabled,
   error,
   field,

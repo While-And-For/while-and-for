@@ -22,7 +22,7 @@ type Props = {
   onChange: (e: boolean) => void;
 };
 
-const Checkbox: React.SFC<InputProps<boolean, Props>> = ({
+const Checkbox: React.FC<InputProps<boolean, Props>> = ({
   children,
   disabled,
   field,

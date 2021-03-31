@@ -12,7 +12,7 @@ type InputPropsExtended = InputProps<string> & {
   addonAfter?: string | ReactNode;
 };
 
-const Input: React.SFC<InputPropsExtended> = ({
+const Input: React.FC<InputPropsExtended> = ({
   addonAfter,
   disabled,
   error,

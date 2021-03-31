@@ -29,7 +29,7 @@ type Props = {
   submit: (a: Values) => void;
 };
 
-const ChangePassword: React.SFC<Props> = ({
+const ChangePassword: React.FC<Props> = ({
   onError,
   onSuccess,
   submit

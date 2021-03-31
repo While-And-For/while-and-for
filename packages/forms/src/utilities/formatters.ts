@@ -1,7 +1,7 @@
 import moment from 'moment';
 
 export const toCurrency = (sign = '$') => (a?: string): string | undefined =>
-  a ? `${sign} ${a}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',') : a;
+  a ? `${sign ? sign + ' ' : ''}${a}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',') : a;
 export const fromCurrency = (b?: string): string | undefined =>
   b ? b.replace(/\$\s?|\€\s?|\£\s?|(,*)/g, '') : b;
 export const date = (c?: string, d?: string): string | undefined =>

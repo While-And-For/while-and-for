@@ -4,5 +4,5 @@ declare type Props = {
     prefix?: string;
     setPrefix: Dispatch<SetStateAction<string | undefined>>;
 };
-declare const CountryCodes: React.SFC<Props>;
+declare const CountryCodes: React.FC<Props>;
 export default CountryCodes;

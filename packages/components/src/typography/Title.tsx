@@ -9,7 +9,7 @@ export interface TitleProps {
   style?: Properties;
 }
 
-const Title: React.SFC<TitleProps> = ({ children, level, style }) => (
+const Title: React.FC<TitleProps> = ({ children, level, style }) => (
   <TitleDefault style={style} level={level}>
     {children}
   </TitleDefault>

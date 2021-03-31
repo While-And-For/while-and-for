@@ -25,7 +25,7 @@ type Props = {
   };
 };
 
-const Item: React.SFC<Props> = ({
+const Item: React.FC<Props> = ({
   children,
   colon,
   extra,

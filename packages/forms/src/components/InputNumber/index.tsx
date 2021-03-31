@@ -1,4 +1,4 @@
-import React, { ReactText, SFC } from 'react';
+import React, { ReactText, FC } from 'react';
 import styled from 'styled-components';
 
 import { InputNumber as InputNumberDefault } from 'antd';
@@ -17,7 +17,7 @@ type Props = {
   parser?: ((displayValue: string | undefined) => ReactText) | undefined;
 } & InputProps<number>;
 
-const InputNumber: SFC<Props> = ({
+const InputNumber: FC<Props> = ({
   disabled,
   error,
   field,

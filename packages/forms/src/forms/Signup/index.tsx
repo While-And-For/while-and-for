@@ -34,7 +34,7 @@ type Props = {
   submit: (a: Values) => void;
 };
 
-const Signup: React.SFC<Props> = ({
+const Signup: React.FC<Props> = ({
   include,
   onError,
   onSuccess,

@@ -7,5 +7,5 @@ declare type Props = {
     onSuccess?: (r: any) => void;
     submit: (a: Values) => void;
 };
-declare const ForgotPassword: React.SFC<Props>;
+declare const ForgotPassword: React.FC<Props>;
 export default ForgotPassword;

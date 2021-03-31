@@ -8,5 +8,5 @@ declare type Props = {
     onSuccess?: (r: any) => void;
     submit: (values: Values) => void;
 };
-declare const Login: React.SFC<Props>;
+declare const Login: React.FC<Props>;
 export default Login;

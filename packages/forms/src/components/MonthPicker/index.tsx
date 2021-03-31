@@ -1,4 +1,4 @@
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import moment from 'moment';
 
 import { DatePicker } from 'antd';
@@ -13,7 +13,7 @@ type Props = InputProps<moment.Moment> & {
   setFieldValue: (a: moment.Moment | null) => void;
 };
 
-const MonthPicker: SFC<Props> = ({
+const MonthPicker: FC<Props> = ({
   disabled,
   error,
   field,

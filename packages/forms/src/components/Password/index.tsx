@@ -1,4 +1,4 @@
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 
 import { Input as InputDefault } from 'antd';
 import withFieldMeta from '../../utilities/withFieldMeta';
@@ -9,7 +9,7 @@ import { InputProps } from '../interface';
 
 const PasswordDefault = InputDefault.Password;
 
-const Password: SFC<InputProps<string>> = ({
+const Password: FC<InputProps<string>> = ({
   disabled,
   error,
   field,

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Title, { TitleProps } from './Title';
 
-const H3: React.SFC<TitleProps> = ({ children, style }) => (
+const H3: React.FC<TitleProps> = ({ children, style }) => (
   <Title level={3} style={style}>
     {children}
   </Title>

@@ -1,4 +1,4 @@
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 
 import { Select as SelectDefault } from 'antd';
 import withFieldMeta from '../../utilities/withFieldMeta';
@@ -14,7 +14,7 @@ type Props = {
   style: any;
 } & InputProps<any>;
 
-const Select: SFC<Props> = ({
+const Select: FC<Props> = ({
   children,
   disabled,
   error,

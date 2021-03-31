@@ -12,7 +12,7 @@ type Props = {
   setPrefix: Dispatch<SetStateAction<string | undefined>>;
 };
 
-const CountryCodes: React.SFC<Props> = ({ disabled, prefix, setPrefix }) => (
+const CountryCodes: React.FC<Props> = ({ disabled, prefix, setPrefix }) => (
   <Select
     disabled={disabled}
     style={{ minWidth: '97px' }}

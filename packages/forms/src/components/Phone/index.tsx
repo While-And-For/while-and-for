@@ -1,4 +1,4 @@
-import React, { SFC, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 import { Input } from 'antd';
 
@@ -16,7 +16,7 @@ const getPrefix = (phone: string | undefined): string => {
   return prefix ? prefix.value : '';
 };
 
-const Phone: SFC<InputProps<string>> = ({
+const Phone: FC<InputProps<string>> = ({
   disabled,
   error,
   field,

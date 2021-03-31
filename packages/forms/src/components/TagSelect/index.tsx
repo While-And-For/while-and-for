@@ -17,7 +17,7 @@ type Props = {
   options: Option[];
 } & InputProps<any>;
 
-const TagSelect: React.SFC<Props> = ({
+const TagSelect: React.FC<Props> = ({
   disabled,
   error,
   field,

@@ -24,7 +24,7 @@ type Props = {
   submit: (a: Values) => void;
 };
 
-const ForgotPassword: React.SFC<Props> = ({ onError, onSuccess, submit }) => (
+const ForgotPassword: React.FC<Props> = ({ onError, onSuccess, submit }) => (
   <Formik
     initialValues={initialValues}
     onSubmit={handleSubmit({

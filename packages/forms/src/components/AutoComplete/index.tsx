@@ -1,4 +1,4 @@
-import React, { SFC, useState } from 'react';
+import React, { FC, useState } from 'react';
 
 import { AutoComplete as AutoCompleteDefault } from 'antd';
 
@@ -14,7 +14,7 @@ type Props = {
   setFieldValue: any;
 };
 
-const AutoComplete: SFC<InputProps<string, Props>> = ({
+const AutoComplete: FC<InputProps<string, Props>> = ({
   dataSource,
   disabled,
   error,

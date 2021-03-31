@@ -19,5 +19,5 @@ declare type Props = {
         [key: string]: number;
     };
 };
-declare const Item: React.SFC<Props>;
+declare const Item: React.FC<Props>;
 export default Item;

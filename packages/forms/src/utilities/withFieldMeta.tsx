@@ -3,7 +3,7 @@ import _get from 'lodash.get';
 
 type DisplayName = string | 'Component';
 
-function getDisplayName<T>(WrappedComponent: React.SFC<T>): DisplayName {
+function getDisplayName<T>(WrappedComponent: React.FC<T>): DisplayName {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
@@ -17,8 +17,8 @@ function getStatus(touched: boolean, error?: string, validate = true): Status {
 // TODO: Define exact prop spreading function for mapping specific component props
 // through to child component rather than using {...props}
 
-function withFieldMeta<T>(WrappedComponent: React.SFC<T>): React.SFC<any> {
-  const FieldMeta: React.SFC<any> = ({
+function withFieldMeta<T>(WrappedComponent: React.FC<T>): React.FC<any> {
+  const FieldMeta: React.FC<any> = ({
     field,
     form: { errors, touched, setFieldValue },
     label,
