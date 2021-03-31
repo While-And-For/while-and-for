@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 import { Button } from 'antd';
 
-export default styled(Button)`
+const ButtonLink = styled(Button)`
   && {
     padding: 0;
   }
 `;
+
+export default ButtonLink;
